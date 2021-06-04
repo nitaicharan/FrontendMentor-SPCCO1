@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  --color-main-background: hsl(233, 47%, 7%);
+  --color-card-background: hsl(244, 38%, 16%);
+  --color-accent: hsl(277, 64%, 61%);
+  --color-white-opaque: hsl(0, 0%, 100%);
+  --color-white-transparent75: hsla(0, 0%, 100%, 0.75);
+  --color-white-transparent60: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  background-color: var(--color-main-background);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  max-width: 60rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.card {
+  background-color: var(--color-card-background);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.card > * {
+  width: 50%;
+}
+
+.card__body {
+}
+
+.card__image {
+  position: relative;
+  background-image: url(../images/image-header-desktop.jpg);
+  background-position: top;
+  background-size: cover;
+  background-color: var(--color-accent);
+  background-blend-mode: multiply;
+}
+
+.card__text {
+  padding: 3rem 4rem;
+}
+
+.card__text--title {
+  color: var(--color-white-opaque);
+  padding-bottom: 1em;
+}
+
+.card__text--description {
+  color: var(--color-white-transparent75);
+  margin-bottom: 8em;
+}
+
+.card__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__stats--title {
+  color: var(--color-white-opaque);
+}
+
+.card__stats--description {
+  color: var(--color-white-transparent60);
+}
+
+.attribution {
+  text-align: center;
+}
+
+.color-accent {
+  color: var(--color-accent) !important;
+}
