@@ -14,9 +14,10 @@
 
 ## About project
 
-This project was project of Frontend Mentor challenge "Stats preview card component".
+This project was a challenge of Frontend Mentor website called "Stats preview card component".
 
 - [Challenge][challenge-url]
+- [Solution][solution-url]
 
 ## Contact
 
@@ -32,9 +33,9 @@ This project was project of Frontend Mentor challenge "Stats preview card compon
 ```
 git add -A
 git commit -m <tittle> <message>
-git push origin <branch>
-git subtree push --prefix src/ origin gh-pages
-git push origin `git subtree split --prefix dist/course master`:gh-pages --force
+git push <remote> <branch>
+git subtree push --prefix <directory> <remote> gh-pages
+git push <remote> `git subtree split --prefix <directory> <branch>`:gh-pages --force
 ```
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -46,6 +47,7 @@ git push origin `git subtree split --prefix dist/course master`:gh-pages --force
 <!-- ALIAS README -->
 
 [challenge-url]: https://frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62
+[solution-url]: https://www.frontendmentor.io/solutions/responsive-layout-using-flexbox-mnbzsm0ty
 
 <!-- CONTACT SHIELDS -->
 
